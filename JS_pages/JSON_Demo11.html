@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Array</title>
+    </head>
+    <body>
+       
+        <input type="button" value="Show JSON Array" onclick="go()">
+        <hr>
+        
+        <label id="lb"></label>
+        <script>
+            function go()
+            {
+                var a = [
+                   {"rollno":1, "name":"xyz", "marks":76},
+                   {"rollno":2, "name":"rof", "marks":93},
+                   {"rollno":3, "name":"def", "marks":43},
+                   {"rollno":4, "name":"abc", "marks":53},
+                   {"rollno":5, "name":"pss", "marks":29},
+               ];
+                console.log(a);
+                
+                var ans = "";
+                
+                for(var i=0; i<a.length; i++)
+                {
+                    var st  = a[i];
+                    
+                    // Generate HTML at runtime
+                    ans = ans + st.rollno + "<br>";
+                    ans = ans + st.name + "<br>";
+                    ans = ans + st.marks + "<br>";
+                    ans = ans + "<hr>";
+                }
+                
+                document.getElementById("lb").innerHTML = ans;
+            }
+        </script>
+    </body>
+</html>

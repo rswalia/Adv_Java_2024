@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Generate HTML</title>
+    </head>
+    <body>
+        
+        <input type="button" value="Generate List" onclick="go()">
+        <div id="d1">
+            DATA WILL BE SHOWN HERE
+        </div>
+        
+        <script>
+            function go()
+            {
+//                alert("Rohit");
+                var a = [ "Harshit", "Naman", "Abhinav", "Lovish" ];
+                var ans = "";
+                
+                ans = ans + "<h1>List of Students</h1>";
+                
+                ans += "<ul>";
+                for(var i=0; i<a.length; i++)
+                {
+                    ans += "<li>"+a[i]+"</li>";
+                }
+                ans += "</ul>";
+                
+                document.getElementById("d1").innerHTML = ans;
+            }
+        </script>
+    </body>
+</html>

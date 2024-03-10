@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="../bootstrap_offline/css/bootstrap.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <style>
+        .green {
+            background-color: green;
+            border: 2px solid white;
+            height: 100px;
+        }
+
+        .red {
+            background-color: red;
+            border: 2px solid white;
+            height: 100px;
+        }
+
+        .blue {
+            background-color: blueviolet;
+            border: 2px solid white;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- section-1 -->
+    <h1 class="text-center">1: Bootstrap Introduction</h1>
+    <div class="container">
+        <h1 class="text-primary text-uppercase text-start">Heading</h1>
+        <h1 class="text-secondary text-center">Heading</h1>
+        <h1 class="text-danger text-end">Heading</h1>
+        <h1 class="text-info">Heading</h1>
+        <h1 class="text-warning">Heading</h1>
+        <h1 class="text-dark">Heading</h1>
+        <h1 class="text-light">Heading</h1>
+        <h1 class="text-success text-bg-dark p-5 m-3">Heading</h1>
+
+        <button class="btn btn-primary p-3">Submit</button>
+        <button class="btn btn-outline-danger">
+            <i class="fa-solid fa-trash"></i> Delete
+        </button>
+        <i class="fa-solid fa-trash fa-3x text-warning"></i>
+    </div>
+    <hr>
+
+    <!-- section-2 -->
+    <h1 class="text-center">2: Tables</h1>
+    <div class="container">
+        <table class="table table-bordered table-striped table-hover">
+            <thead class="table-primary">
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-info">
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>Rohit</td>
+                    <td>Male</td>
+                    <td>89</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+
+    <!-- section-3 -->
+    <h1 class="text-center">3: Forms</h1>
+    <div class="container bg-light">
+        <form>
+            <div class="mb-3">
+                <label class="mb-2">Name</label>
+                <input type="text" class="form-control p-2">
+            </div>
+
+            <div class="mb-3">
+                <label class="mb-2">Email</label>
+                <input type="email" class="form-control p-2">
+            </div>
+
+            <div class="mb-3">
+                <label class="mb-2">Country</label>
+                <select class="form-select">
+                    <option value="#">Select Your Country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Register" class="btn btn-primary p-2 form-control">
+
+            <button class="btn btn-danger p-3 mt-4">
+                <i class="fa-solid fa-trash"></i>
+                <label>Delete</label>
+            </button>
+        </form>
+    </div>
+    <hr>
+
+    <!-- section-4 -->
+    <h1 class="text-center">4: Bootstrap Grid System</h1>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-1 green">col-1</div>
+            <div class="col-2 green">col-1</div>
+            <!-- <div class="col-1 green">col-1</div> -->
+            <!-- <div class="col-1 green">13</div> -->
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4 red">col-4</div>
+            <div class="col-4 red">col-4</div>
+            <div class="col-4 red">col-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 green">col-4</div>
+            <div class="col-8 green">col-8</div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- section-5 -->
+    <h1 class="text-center">5: Responsive</h1>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 blue">1</div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 blue">2</div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 blue">3</div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 blue">4</div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6 blue">5</div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 blue">6</div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- section-6 -->
+    <h1 class="text-center">6: Forms Responsive</h1>
+
+    <div class="container">
+        <form>
+            <div class="row bg-primary p-3">
+                <div class="col-lg-2">
+                    <label>Name</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control mb-3">
+                </div>
+
+                <div class="col-lg-2">
+                    <label>Email</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="email" class="form-control mb-3">
+                </div>
+
+                <div class="col-lg-2">
+                    <label>Mobile</label>
+                </div>
+                <div class="col-lg-10">
+                    <input type="tel" class="form-control mb-3">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row bg-info">
+            <div class="col-lg-6 container bg-warning p-3">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label>Name</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control mb-3">
+                        </div>
+
+                        <div class="col-lg-2">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control mb-3">
+                        </div>
+
+                        <div class="col-lg-2">
+                            <label>Mobile</label>
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="tel" class="form-control mb-3">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row bg-danger p-3">
+            <div class="col-lg-8 bg-primary">
+                <form>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label>Name</label>
+                            <input type="text" class="form-control mb-3">
+                        </div>
+                        <div class="col-lg-6">
+                            <label>Email</label>
+                            <input type="email" class="form-control mb-3">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti dolorem impedit qui
+                    aperiam quibusdam velit ab fuga enim laborum voluptatum sapiente natus quod porro excepturi
+                    recusandae quisquam quis, vitae fugiat! Explicabo temporibus mollitia voluptate ratione odio ab nisi
+                    esse.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- section-7 -->
+
+</body>
+
+</html>

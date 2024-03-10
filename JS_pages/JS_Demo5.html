@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+
+        <h1>On Key Up</h1>
+        <input type="text" id="rd" onkeyup="autoType()">
+        <input type="text" id="wrt">
+
+        
+        <h1>On Mouse Over/Out</h1>
+        <h3 id="hover" onmouseover="hover()" onmouseout="hover2()">Hover Me</h3>
+
+        
+        <h1>On Blur</h1>
+        <input type="text" id="rd1" onblur="go()">
+        <input type="text">
+        <p id="p1">Hie my name is Rohit Singh Walia</p>
+
+        <script>
+//            text
+            function autoType()
+            {
+                var ans = document.getElementById("rd").value;
+                document.getElementById("wrt").value = ans;
+            }
+
+//            mouse
+            function hover()
+            {
+                document.getElementById("hover").style.backgroundColor = "red";
+            }
+
+            function hover2()
+            {
+                document.getElementById("hover").style.backgroundColor = "#fff";
+            }
+
+            function go()
+            {
+                var ans = document.getElementById("rd1").value;
+                document.getElementById("p1").innerHTML = ans;
+            }
+        </script>
+    </body>
+</html>

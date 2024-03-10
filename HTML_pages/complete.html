@@ -1,0 +1,159 @@
+<!-- 
+Boiler Plate
+Tags
+    Paired, Empty
+Heading Tag
+Element = Tag + Attribute
+    Block, Inline
+Formatting Tags
+HTML Entity
+img
+audio
+video
+Hyperlinks
+    Internal, External, Bookmarks
+iframe
+Table - rowspan, colspan
+List
+Form - input tag
+select
+textarea
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complete HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Entity = Tag(<h1>) + Attribute(class) -->
+        <h1>Rohit Singh Walia</h1>
+        <h2>Rohit Singh Walia</h2>
+        <h3>Rohit Singh Walia</h3>
+        <h4>Rohit Singh Walia</h4>
+        <h5>Rohit Singh Walia</h5>
+        <h6>Rohit Singh Walia</h6>
+
+        <hr>
+        <div>Block Element</div>
+
+        <span>Inline Element</span>
+        <b>Rohit</b>
+        <i>Singh</i>
+        <hr>
+
+        <p>Lorem <b>ipsum</b> dolor <mark>consectetur</mark> <u>elit</u>
+            10<sup>2</sup>
+            <del>H2O</del> 89
+            H<sub>2</sub>O
+        </p>
+
+        <h3>HTML Entity</h3>
+        <p>&copy; VMM&trade; &lt;h1&gt;</p>
+        <hr>
+        <!--<img src="Images/extraction.jpeg" alt="Extraction" title="Extraction Image">-->
+        <audio src="Audio/aud1.mp3" controls></audio>
+        <video src="Video/vid1.mp4.crdownload" controls></video>
+        <hr>
+
+        <h3>Hyperlinks</h3>
+        <a href="https://www.youtube.com/" target="_blank">YouTube</a> <br>
+        <a href="mailto:waliarohit2001@gmail.com">Mail : Rohit Singh</a> <br>
+        <hr>
+
+        <h3>iframe</h3>
+        <iframe src="https://www.ndtv.com/" frameborder="0" width="50%" height="400"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pj8HxXc1DZU?si=h4whKizrnKQUoS67"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        <hr>
+
+        <h2>Tables in HTML</h2>
+        <table border="1" cellpadding="10" cellspacing="10">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td colspan="2">101</td>
+                    <td>Rohit</td>
+                    <td>23</td>
+                    <!-- <td>90</td> -->
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Pratham</td>
+                    <td>22</td>
+                    <td rowspan="2">85</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Yasik</td>
+                    <td>24</td>
+                    <!-- <td>97</td> -->
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+
+        <h2>Lists in HTML</h2>
+        <ol type="a">
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+        </ol>
+
+        <dl>
+            <dt><i>HTML</i></dt>
+            <dd>HyperText Markup Language</dd>
+        </dl>
+        <hr>
+
+        <h2>Forms in HTML</h2>
+        <label for="fullname">Name</label>
+        <input type="text" id="fullname" placeholder="Enter Your Name"> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Your Email"> <br>
+
+        <label for="pass">Password</label>
+        <input type="password" id="pass" placeholder="Enter Your Password"> <br>
+
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" placeholder="Enter Your DOB"> <br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" id="male"> Male
+        <input type="radio" name="gender" id="female"> Female
+        <br>
+
+        <label>Country</label>
+        <select id="country">
+            <option value="">Select Your Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+        </select>
+        <br>
+        <label for="address">Address</label>
+        <textarea id="address" cols="30" rows="5"></textarea>
+        <br> <br>
+        <!-- Buttons -->
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        <input type="button" value="Button">
+        <hr>
+    </body>
+</html>

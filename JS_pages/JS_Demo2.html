@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation 2</title>
+    </head>
+    <body>
+        <h1>DOM Manipulation 2</h1>
+        
+        <input type="button" value="One" onclick="one()">
+        <input type="button" value="Two" onclick="two()">
+        <input type="button" value="innerText" onclick="inner()">
+        <input type="button" value="innerHTML" onclick="changeHtml()">
+        
+        
+        <h2 id="one">Heading 1</h2>
+        <h2 id="two">Heading</h2>
+        <h2 id="three">Heading</h2>
+        <h2 id="four">Heading</h2>
+        <hr>
+        
+        <script>
+//            button click
+            function one()
+            {
+//                alert("Hey");
+                document.getElementById("one").style.backgroundColor = "red";
+            }
+            
+            function two()
+            {
+                document.getElementById("two").style.backgroundColor = "blue";
+            }
+            
+            function inner()
+            {
+                document.getElementById("three").innerText = "<p>Rohit</p>";
+            }
+            
+            function changeHtml()
+            {
+                document.getElementById("four").innerHTML = "<h6>Rohit Singh Walia</h6>";
+            }
+        </script>
+    </body>
+</html>

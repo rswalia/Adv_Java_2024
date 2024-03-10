@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modify CSS with JS : Demo 2</title>
+        <style>
+            .style1 {
+                width: 300px;
+                height: 200px;
+                opacity: 0.5;
+            }
+            
+            .style2 {
+                width: 300px;
+                height: 200px;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Single image -->
+        <img class="style1" id="im3" src="../Images/bassi.jpg" alt="alt" onmouseover="demo()" onmouseout="demo2()">
+        
+       <!-- Multiple images -->
+        <img class="style1" id="im1" src="../Images/bassi.jpg" alt="alt" onmouseover="go(this)" onmouseout="go2(this)"/>
+        
+        <img class="style1" id="im2" src="../Images/bassi.jpg" alt="alt" onmouseover="go(this)" onmouseout="go2(this)"/>
+                
+        <script>
+            function demo()
+            {
+                document.getElementById("im3").className = "style2";
+            }
+            function demo2()
+            {
+                document.getElementById("im3").className = "style1";
+            }
+            // Multiple Images
+            function go(obj)
+            {
+                obj.className = "style2";
+            }
+            function go2(obj)
+            {
+                obj.className = "style1";
+            }
+            
+        </script>
+    </body>
+</html>

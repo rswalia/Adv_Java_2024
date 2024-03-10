@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JSON Object</title>
+    </head>
+    <body>
+       
+        <input type="button" value="Show Object" onclick="go()">
+        <hr>
+        
+        <label id="lb1">Rollno</label> <br>
+        <label id="lb2">Name</label> <br>
+        <label id="lb3">Marks</label> <br>
+        
+        <script>
+            function go()
+            {
+                var st = {  "rollno" : 1,
+                            "name" : "Rohit",
+                            "marks" : 92 
+                        };
+                console.log(st);
+                
+                // Access
+                document.getElementById("lb1").innerHTML = st.rollno;
+                document.getElementById("lb2").innerHTML = st.name;
+                document.getElementById("lb3").innerHTML = st.marks; 
+
+//                document.getElementById("lb1").innerHTML = st["rollno"];
+//                document.getElementById("lb2").innerHTML = st["name"];
+//                document.getElementById("lb3").innerHTML = st["marks"];
+                
+            }
+        </script>
+    </body>
+</html>

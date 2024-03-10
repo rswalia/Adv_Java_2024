@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        /********************* Global Styling *******************/
+        .bgColor {
+            text-align: justify;
+        }
+
+        .grid {
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+        }
+
+        .grid-item1 {
+            background-color: red;
+        }
+
+        .grid-item2 {
+            background-color: blue;
+        }
+
+        .grid-item3 {
+            background-color: violet;
+        }
+
+        .grid-item4 {
+            background-color: yellow;
+        }
+
+        /******************* Local Styling ********************/
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .bgColor {
+                background-color: darkgrey;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .bgColor {
+                background-color: olivedrab;
+            }
+
+            .grid {
+                grid-template-columns: 80% 20%;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .bgColor {
+                background-color: yellow;
+            }
+
+            .grid {
+                grid-template-columns: auto auto;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .bgColor {
+                background-color: blue;
+            }
+
+            .grid {
+                grid-template-columns: auto auto auto;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .bgColor {
+                background-color: red;
+            }
+
+            .grid {
+                grid-template-columns: auto auto auto auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgColor">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit dignissimos ipsa sapiente obcaecati minima!
+            Consequatur at voluptatibus perspiciatis, explicabo adipisci nobis deleniti? Quod asperiores molestiae dicta
+            praesentium necessitatibus reiciendis ipsa at perspiciatis? At ex earum nesciunt architecto facere fugiat
+            minus quibusdam assumenda obcaecati placeat natus saepe laboriosam, aliquam, minima tenetur explicabo.
+            Similique quisquam quia tempora sit neque corrupti dolor, autem, illo laudantium animi, cumque beatae iusto
+            qui aut fugiat odio mollitia deserunt distinctio placeat commodi aperiam quis delectus harum. Eum modi dicta
+            velit nam iste neque quam, quasi rem odio temporibus maiores eius natus obcaecati fugit ratione error saepe
+            fugiat veniam repellat cumque reprehenderit rerum. Adipisci eligendi molestias illo vitae perspiciatis rem
+            nesciunt, illum porro aliquid necessitatibus a ut! Saepe laboriosam sit ipsa deserunt facere ab. Expedita
+            soluta, possimus at rerum obcaecati eaque ex exercitationem deserunt cupiditate praesentium ratione
+            recusandae veritatis incidunt mollitia nemo molestias. Odio accusamus libero quia facere sint. Praesentium
+            fuga quam, porro at incidunt dolor natus, et neque assumenda error ad fugiat. Sequi nisi est praesentium
+            harum quis beatae et earum. Adipisci eaque repellendus dicta! Molestias similique praesentium harum maxime
+            mollitia optio dolor illum eius eligendi nisi eaque illo voluptatibus inventore, provident omnis culpa quos,
+            libero accusantium labore natus eveniet. Animi voluptatum inventore commodi saepe omnis corrupti fugit
+            obcaecati quod incidunt aliquam tempora ipsa, doloremque eveniet assumenda aliquid cupiditate enim labore
+            sapiente, laudantium molestias maiores rerum repellendus modi dolor! Corporis, provident ex qui cumque culpa
+            deserunt eum distinctio doloremque, itaque excepturi veniam quos voluptatem, suscipit similique dicta.</p>
+    </div>
+    <hr>
+
+    <div class="grid">
+        <div class="grid-item1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, mollitia! Laboriosam provident minus
+                cumque aspernatur animi libero molestias, alias rem!</p>
+        </div>
+
+        <div class="grid-item2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, mollitia! Laboriosam provident minus
+                cumque aspernatur animi libero molestias, alias rem!</p>
+        </div>
+
+        <div class="grid-item3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, mollitia! Laboriosam provident minus
+                cumque aspernatur animi libero molestias, alias rem!</p>
+        </div>
+
+        <div class="grid-item4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, mollitia! Laboriosam provident minus
+                cumque aspernatur animi libero molestias, alias rem!</p>
+        </div>
+    </div>
+</body>
+
+</html>

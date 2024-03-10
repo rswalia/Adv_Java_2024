@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nested JSON</title>
+    </head>
+    <body>
+        
+        <input type="button" value="Click Me" onclick="go()">
+        <br> <br>
+        <label id="lb1">Rollno</label> <br>
+        <label id="lb2">Name</label> <br>   
+        <label id="lb3">Marks</label>
+
+        <script>
+            function go()
+            {
+                var st = {  "rollno" : 1,
+                            "name" : "abc",
+                            "marks" : [90,92,98,85,73]
+                        };
+                        
+                document.getElementById("lb1").innerHTML = st.rollno;
+                document.getElementById("lb2").innerHTML = st.name;
+                
+                var arr = st.marks;
+                var ans = "";
+                ans += "<ul>";
+                for(var i=0; i<arr.length; i++)
+                {
+                    ans += "<li>"+arr[i]+"</li>";
+                }
+                ans += "</ul>";
+                document.getElementById("lb3").innerHTML = ans;
+                
+            }
+        </script>
+    </body>
+</html>

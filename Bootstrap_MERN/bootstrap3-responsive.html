@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Breakpoints</title>
+    <link rel="stylesheet" href="../bootstrap_offline/css/bootstrap.css">
+    <style>
+        .green {
+            background-color: green;
+            height: 100px;
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+        }
+
+        .red {
+            background-color: red;
+            height: 100px;
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+        }
+
+        .blue {
+            background-color: blue;
+            height: 100px;
+            border: 2px solid white;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row mb-4">
+        <div class="col-4 green">col-4</div>
+        <div class="col-4 green">col-4</div>
+        <div class="col-4 green">col-4</div>
+    </div>
+
+    <!-- if <1200px take width: 100% -->
+    <div class="row mb-4">
+        <div class="col-xl-4 blue">col-xl-4</div>
+        <div class="col-xl-4 blue">col-xl-4 (1200 px)</div>
+        <div class="col-xl-4 blue">col-xl-4</div>
+    </div>
+
+    <!-- if <992px take width: 100% -->
+    <div class="row mb-4">
+        <div class="col-lg-4 red">col-lg-4</div>
+        <div class="col-lg-4 red">col-lg-4 (992 px)</div>
+        <div class="col-lg-4 red">col-lg-4</div>
+    </div>
+
+    <!-- if <768px take width: 100% -->
+    <div class="row mb-4">
+        <div class="col-md-4 green">col-md-4</div>
+        <div class="col-md-4 green">col-md-4 (768 px)</div>
+        <div class="col-md-4 green">col-md-4</div>
+    </div>
+
+    <!-- if <576px take width: 100% -->
+    <div class="row">
+        <div class="col-sm-4 blue">col-sm-4</div>
+        <div class="col-sm-4 blue">col-sm-4 (576 px)</div>
+        <div class="col-sm-4 blue">col-sm-4</div>
+    </div>
+</body>
+
+</html>

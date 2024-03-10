@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add With Validation</title>
+    </head>
+    <body>
+        
+        <input type="text" id="t1">
+        <input type="button" value="Button 1" onclick="go()">
+        <hr>
+        
+        <p id="p1">Hello World</p>
+        <input type="button" value="Button 2" onclick="go2()">
+        <hr>
+            
+        <h1>Add With Validation</h1>
+        <input id="n1" type="text" placeholder="Enter First Number">
+        <input id="n2" type="text" placeholder="Enter Second Number">
+        <input type="button" value="Add" onclick="add()">
+        <br> <br>
+        <input id="ans" type="text">
+        
+        <script>
+            function go()
+            {
+                document.getElementById("t1").value = "Rohit TCS Digital";
+            }
+            
+            function go2()
+            {
+                document.getElementById("p1").innerHTML = "<h1>Hey Man</h1>";
+            }
+            
+            function add()
+            {
+                var a = parseFloat(document.getElementById("n1").value);
+                var b = parseFloat(document.getElementById("n2").value);
+                // Validations
+                if(a=="" || isNaN(a))
+                {
+                    alert("Enter valid First number");
+                }
+                else if(b=="" || isNaN(b))
+                {
+                    alert("Enter valid Second number");
+                }
+                else
+                {
+                    var result = a+b;
+                    document.getElementById("ans").value = result;
+                }
+            }
+        </script>
+    </body>
+</html>

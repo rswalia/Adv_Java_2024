@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript DOM Manipulation</title>
+        <style>
+            .odd {
+                background-color: pink;
+                color: white;
+            }
+            .even {
+                background-color: greenyellow;
+                color: white;
+            }
+            
+            #one {
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>DOM Manipulation 1</h1>
+
+        <input type="button" value="Click Me" onclick="go()">
+        <input type="button" value="One" onclick="demo1()">
+        <input type="button" value="Two" onclick="demo2()">
+        
+
+        <h1 class="odd" id="one">Heading</h1>
+        <h1 class="even" id="two">Heading</h1>
+        <h1 class="odd">Heading</h1>
+        <h1 class="even">Heading</h1>
+        <h1 class="odd">Heading</h1>
+        <h1 class="even">Heading</h1>
+        
+
+        <!-- JS code -->
+        <script>
+            function go()
+            {
+                alert("Button is clicked");
+//                console.log("Hello in console");
+            }
+            
+            function demo1()
+            {
+                document.getElementById("one").style.backgroundColor = "red";
+            }
+            
+            function demo2()
+            {
+                document.getElementById("two").style.backgroundColor = "blue";
+//                document.getElementsByClassName("even").style.backgroundColor = "pink";
+            }
+        </script>
+    </body>
+</html>

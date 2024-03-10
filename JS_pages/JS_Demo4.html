@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FD Calculator</title>
+    </head>
+    <body>
+        
+        <h1>FD Calculator</h1>
+        
+        <label>Enter Principal</label>
+        <input type="text" id="p"> <br> <br>
+        <label>Enter Rate</label>
+        <input type="text" id="r"> <br> <br>
+        <label>Enter Time</label>
+        <input type="text" id="t"> <br> <br>
+        
+        <input type="button" value="Calculate" onclick="go()">
+        <br> <br>
+        
+        <h2 id="ans1">ans1</h2>
+        <h2 id="ans2">ans2</h2>
+        
+        <script>
+            function go()
+            {
+                var p = parseFloat(document.getElementById("p").value);
+                var r = parseFloat(document.getElementById("r").value);
+                var t = parseFloat(document.getElementById("t").value);
+                
+                var A = p * Math.pow((1+r/100), t);
+                var I = A - p;
+                
+                document.getElementById("ans1").innerHTML = "Amount = "+A;
+                document.getElementById("ans2").innerHTML = "Intereset = "+I;
+                
+            }
+        </script>
+    </body>
+</html>

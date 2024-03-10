@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Strength</title>
+    </head>
+    <body>
+        
+        <h1>Password Strength</h1>
+        
+        <input id="p1" type="password" onkeyup="go()">
+        <label id="lb1">This is label</label>
+        
+        <script>
+            function go()
+            {
+                var p = document.getElementById("p1").value;
+                
+                if(p.length <= 5)
+                {
+                    document.getElementById("lb1").innerHTML = "weak";
+                    document.getElementById("lb1").style.color = "red";
+                }
+                else if(p.length>=6 && p.length<=8)
+                {
+                    document.getElementById("lb1").innerHTML = "medium";
+                    document.getElementById("lb1").style.color = "orange";
+                }
+                else if(p.length>8)
+                {
+                    document.getElementById("lb1").innerHTML = "strong";
+                    document.getElementById("lb1").style.color = "green";
+                }
+            }
+        </script>
+    </body>
+</html>

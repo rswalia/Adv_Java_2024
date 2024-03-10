@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Table</title>
+    </head>
+    <body>
+
+        <input type="button" value="Generate Table" onclick="go()">
+        
+        <!--width="100%"-->
+        <table id="t1" border="1" width=300>
+        </table>
+        
+        <!--<div id="d1"></div>-->
+
+    <script>
+        function go()
+        {
+            var a = [
+                   {"rollno":1, "name":"xyz", "marks":76},
+                   {"rollno":2, "name":"rof", "marks":93},
+                   {"rollno":3, "name":"def", "marks":43},
+                   {"rollno":4, "name":"abc", "marks":53},
+                   {"rollno":5, "name":"pss", "marks":29},
+               ];
+            
+            // Access
+            var ans = "";
+            for(var i=0; i<a.length; i++)
+            {
+                ans += "<tr>";
+                var st = a[i];
+                ans += "<td>"+st.rollno+"</td>";
+                ans += "<td>"+st.name+"</td>";
+                ans += "<td>"+st.marks+"</td>";
+                ans += "</tr>";
+            }
+            
+            document.getElementById("t1").innerHTML = ans;
+        }
+    </script>
+    </body>
+</html>

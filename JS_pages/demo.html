@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Demo</title>
+    </head>
+    <body>
+        
+        <input type="button" value="Show Object" onclick="go1()">
+        <input type="button" value="Show Array" onclick="go2()">
+        <br> <br>
+        
+        <label id="lb1">JSON Object</label> <br>
+        <label id="lb2">JSON Object</label> <br>
+        <label id="lb3">JSON Object</label> <br>
+        <hr>
+        
+        <label id="lb">JSON Array</label>
+        
+        <script>
+            function go1()
+            {
+                var a = {"rollno":1, "name":"abc", "marks":98};
+                // Access JSON Object
+//                document.getElementById("lb1").innerHTML = a.rollno;
+//                document.getElementById("lb2").innerHTML = a.name;
+//                document.getElementById("lb3").innerHTML = a.marks;
+
+                document.getElementById("lb1").innerHTML = a["rollno"];
+                document.getElementById("lb2").innerHTML = a["name"];
+                document.getElementById("lb3").innerHTML = a["marks"];
+            }
+            
+            function go2()
+            {
+                var a = [
+                    {"rollno":1, "name":"abc", "marks":98},
+                    {"rollno":2, "name":"abc", "marks":98},
+                    {"rollno":3, "name":"abc", "marks":98},
+                    {"rollno":4, "name":"abc", "marks":98}
+                ];
+                // Access JSON Array
+                var ans = "";
+                for(var i=0; i<a.length; i++)
+                {
+                    var st = a[i];
+                    ans += st.rollno + "<br>";
+                    ans += st.name + "<br>";
+                    ans += st.marks + "<br>";
+                    ans += "<hr>";
+                }
+                document.getElementById("lb").innerHTML = ans;
+                
+//                var st = a[1];
+//                document.getElementById("lb1").innerHTML = a.rollno;
+//                document.getElementById("lb2").innerHTML = a.name;
+//                document.getElementById("lb3").innerHTML = a.marks;
+//                document.getElementById("lb1").innerHTML = a["rollno"];
+//                document.getElementById("lb2").innerHTML = a["name"];
+//                document.getElementById("lb3").innerHTML = a["marks"];
+            }
+        </script>
+    </body>
+</html>
