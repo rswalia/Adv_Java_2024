@@ -40,7 +40,7 @@
                 var obj = arr[i];
                 ans += '<div class="row mt-4">';
                 ans += '<div class="col-sm-12">';
-                ans += '<div class="row">';
+                ans += '<div class="row bg-light">';
                 ans += '<div class="col-sm-3">';
                 ans += '<img class="img-fluid" src=' + obj.photos + ' alt="img1">';
                 ans += '</div>';
@@ -146,26 +146,23 @@
         <form>
             <div class="row mt-4 bg-light p-3">
                 <div class="col-sm-2">
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                            City
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Amritsar</a></li>
-                            <li><a class="dropdown-item" href="#">Delhi</a></li>
-                            <li><a class="dropdown-item" href="#">Pune</a></li>
-                        </ul>
-                    </div>
+                    <label for="city">City</label> <br>
+                    <select id="city" class="form-control">
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                    </select>
                 </div>
 
                 <div class="col-sm-3">
-                    <label for="checkin">Check In</label>
-                    <input type="date" id="checkin">
+                    <label for="checkin">Check In</label> <br>
+                    <input type="date" id="checkin" class="form-control">
                 </div>
 
                 <div class="col-sm-3">
-                    <label for="checkout">Check Out</label>
-                    <input type="date" id="checkout">
+                    <label for="checkout">Check Out</label> <br>
+                    <input type="date" id="checkout" class="form-control">
                 </div>
 
                 <div class="col-sm-2">
