@@ -40,6 +40,14 @@
         <servlet-name>nine</servlet-name>
         <servlet-class>nine</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ten</servlet-name>
+        <servlet-class>ten</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>eleven</servlet-name>
+        <servlet-class>eleven</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>one</servlet-name>
         <url-pattern>/one</url-pattern>
@@ -79,6 +87,14 @@
     <servlet-mapping>
         <servlet-name>nine</servlet-name>
         <url-pattern>/nine</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ten</servlet-name>
+        <url-pattern>/ten</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>eleven</servlet-name>
+        <url-pattern>/eleven</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
